@@ -1,19 +1,18 @@
 {
-  "name"         : "node-hkdf",
-  "version"      : "0.0.1",
-  "private"      : true,
+  "name"         : "hkdf-buffer-generator",
+  "version"      : "1.0.0",
   "description"  : "HKDF key derivation function",
   "main"         : "index",
   "repository" : {
     "type" : "git",
-    "url"  : "https://github.com/benadida/node-hkdf"
+    "url"  : "https://github.com/nwrox/node-hkdf"
   },
   "dependencies" : {
     "vows": "0.5.13"
   },
   "author" : {
-    "name"  : "Ben Adida",
-    "email" : "ben@adida.net"
+    "name"  : "Hérikz Nawarro",
+    "email" : "herikz.nawarro@gmail.com"
   },
   "scripts" : {
     "test": "./scripts/run_all_tests.sh"
