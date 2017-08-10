@@ -8,14 +8,16 @@
     "url"  : "https://github.com/nwrox/node-hkdf"
   },
   "dependencies" : {
-    "vows": "0.5.13"
+    "chai": "^4.1.1",
+    "mocha": "^3.5.0"
   },
   "author" : {
     "name"  : "Hérikz Nawarro",
     "email" : "herikz.nawarro@gmail.com"
   },
   "scripts" : {
-    "test": "./scripts/run_all_tests.sh"
+    "test": "./scripts/run_all_tests.sh",
+    "test2": "mocha ./test/all-test.js"
   },
   "engines": {
     "node": ">= 0.6.5"
