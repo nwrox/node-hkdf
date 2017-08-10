@@ -1,1 +1,1 @@
-module.exports = require("./lib/hkdfbuffergenerator");
+module.exports = require("./lib/hkdf");
