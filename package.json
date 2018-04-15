@@ -1,5 +1,5 @@
 {
-  "name": "hkdf-buffer-generator",
+  "name": "node-hkdf",
   "version": "1.0.0",
   "description": "HKDF key derivation function",
   "main": "index",
@@ -16,8 +16,7 @@
     "email": "herikz.nawarro@gmail.com"
   },
   "scripts": {
-    "test": "./scripts/run_all_tests.sh",
-    "test2": "mocha --require babel-register ./test/all-test.js"
+    "mocha": "mocha --require babel-register ./test/all-test.js"
   },
   "engines": {
     "node": ">= 0.6.5"

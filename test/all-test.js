@@ -48,9 +48,12 @@ describe('Appendix A.  Test Vectors', function(){
         'e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fa' +
         'fbfcfdfeff', 'hex'
 	    )
-      const gen = hkdf('sha256', ikm, info, salt, 82)
-      const okm = gen.getOKM().toString('hex')
-      const prk = gen.getPRK().toString('hex')
+      const {
+        getOKM,
+        getPRK
+      } = hkdf('sha256', ikm, info, salt, 82)
+      const okm = getOKM().toString('hex')
+      const prk = getPRK().toString('hex')
 
       expect(okm).to
         .equal(
@@ -74,9 +77,12 @@ describe('Appendix A.  Test Vectors', function(){
       )
     	const salt = Buffer.alloc(0)
       const info = Buffer.alloc(0)
-      const gen = hkdf('sha256', ikm, info, salt, 42)
-      const okm = gen.getOKM().toString('hex')
-      const prk = gen.getPRK().toString('hex')
+      const {
+        getOKM,
+        getPRK
+      } = hkdf('sha256', ikm, info, salt, 42)
+      const okm = getOKM().toString('hex')
+      const prk = getPRK().toString('hex')
 
       expect(okm).to
         .equal(
@@ -96,9 +102,12 @@ describe('Appendix A.  Test Vectors', function(){
       const ikm = Buffer.from('0b0b0b0b0b0b0b0b0b0b0b', 'hex')
     	const salt = Buffer.from('000102030405060708090a0b0c', 'hex')
       const info = Buffer.from('f0f1f2f3f4f5f6f7f8f9', 'hex')
-      const gen = hkdf('sha1', ikm, info, salt, 42)
-      const okm = gen.getOKM().toString('hex')
-      const prk = gen.getPRK().toString('hex')
+      const {
+        getOKM,
+        getPRK
+      } = hkdf('sha1', ikm, info, salt, 42)
+      const okm = getOKM().toString('hex')
+      const prk = getPRK().toString('hex')
 
       expect(okm).to
         .equal(
@@ -132,9 +141,12 @@ describe('Appendix A.  Test Vectors', function(){
         'e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fa' +
         'fbfcfdfeff', 'hex'
       )
-      const gen = hkdf('sha1', ikm, info, salt, 82)
-      const okm = gen.getOKM().toString('hex')
-      const prk = gen.getPRK().toString('hex')
+      const {
+        getOKM,
+        getPRK
+      } = hkdf('sha1', ikm, info, salt, 82)
+      const okm = getOKM().toString('hex')
+      const prk = getPRK().toString('hex')
 
       expect(okm).to
         .equal(
@@ -157,9 +169,12 @@ describe('Appendix A.  Test Vectors', function(){
       )
     	const salt = Buffer.alloc(0)
       const info = Buffer.alloc(0)
-      const gen = hkdf('sha1', ikm, info, salt, 42)
-      const okm = gen.getOKM().toString('hex')
-      const prk = gen.getPRK().toString('hex')
+      const {
+        getOKM,
+        getPRK
+      } = hkdf('sha1', ikm, info, salt, 42)
+      const okm = getOKM().toString('hex')
+      const prk = getPRK().toString('hex')
 
       expect(okm).to
         .equal(
@@ -183,9 +198,12 @@ describe('Appendix A.  Test Vectors', function(){
       )
     	const salt = Buffer.alloc(0)
       const info = Buffer.alloc(0)
-      const gen = hkdf('sha1', ikm, info, salt, 42)
-      const okm = gen.getOKM().toString('hex')
-      const prk = gen.getPRK().toString('hex')
+      const {
+        getOKM,
+        getPRK
+      } = hkdf('sha1', ikm, info, salt, 42)
+      const okm = getOKM().toString('hex')
+      const prk = getPRK().toString('hex')
 
       expect(okm).to
         .equal(
