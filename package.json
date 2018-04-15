@@ -1,25 +1,29 @@
 {
-  "name"         : "hkdf-buffer-generator",
-  "version"      : "1.0.0",
-  "description"  : "HKDF key derivation function",
-  "main"         : "index",
-  "repository" : {
-    "type" : "git",
-    "url"  : "https://github.com/nwrox/node-hkdf"
+  "name": "hkdf-buffer-generator",
+  "version": "1.0.0",
+  "description": "HKDF key derivation function",
+  "main": "index",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nwrox/node-hkdf"
   },
-  "dependencies" : {
+  "dependencies": {
     "chai": "^4.1.1",
     "mocha": "^3.5.0"
   },
-  "author" : {
-    "name"  : "Hérikz Nawarro",
-    "email" : "herikz.nawarro@gmail.com"
+  "author": {
+    "name": "Hérikz Nawarro",
+    "email": "herikz.nawarro@gmail.com"
   },
-  "scripts" : {
+  "scripts": {
     "test": "./scripts/run_all_tests.sh",
-    "test2": "mocha ./test/all-test.js"
+    "test2": "mocha --require babel-register ./test/all-test.js"
   },
   "engines": {
     "node": ">= 0.6.5"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1"
   }
 }
